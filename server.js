@@ -1,11 +1,11 @@
 'use strict'
-require('./config/database')
 const express = require('express')
 const app = express();
 const config = require('./config/general')
-const PORT = process.env.PORT || 8000
-const IP = process.env.IP || '127.0.0.1'
+const PORT = process.env.OPENSHIFT_NODEJS_PORT || 8000
+const IP = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1'
 const swig = require('swig')
+
 var multipart = require('connect-multiparty');
 var multipartMiddleware = multipart();
 
