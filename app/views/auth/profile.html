@@ -1,0 +1,21 @@
+{% extends '../layout/main.html' %}
+{% block title%}Profile{% endblock%}
+{% block content %}
+	<div class="col-xs-12 col-lg-6 col-lg-push-3 janela">
+	<div class="panel panel-default">
+  		<div class="panel-heading">
+    	<h3 class="panel-title">Profile</h3>
+  	</div>
+	  	<div class="panel-body">
+	   		<strong>Email:</strong> {{ user.local.email }}<br>
+	   		<br>
+	   		<ul class="list-group">
+	   			<li class="list-group-item"><a href="/cloud">Image Upload</a></li>
+	   			<li class="list-group-item"><a href="/logout">Logout</a></li>
+	   		</ul>
+	   		
+	  	</div>
+	  	</div>
+	</div>
+	</div>
+{% endblock %}
